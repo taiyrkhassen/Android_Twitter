@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_star">
+        <RelativeLayout
+            android:id="@+id/info_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/user"
+                    android:layout_margin="8sp"/>
+
+                <TextView
+                    android:id="@+id/my_name"
+                    android:layout_marginTop="8sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taisha Khassenov"
+                    android:layout_toRightOf="@+id/user_image"
+                    android:textSize="17dp"
+                    android:textColor="#A34079"
+                    />
+                <TextView
+                    android:id="@+id/day_week"
+                    android:layout_marginTop="8sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginLeft="5sp"
+                    android:text="Satturday"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18dp"
+                    android:textColor="#A34079"/>
+                <TextView
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/my_name"
+                    android:text="status: "
+                    android:layout_marginLeft="95sp"
+                    android:layout_marginTop="5sp"
+                    android:textColor="#7A3333"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_marginTop="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Broken..."
+                    android:layout_below="@+id/my_name"
+                    android:layout_toRightOf="@+id/check"
+                    android:layout_marginLeft="5sp"
+                    android:textSize="20dp"
+                    android:textColor="#fff"/>
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/Tweets_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/info_bar"
+            >
+
+        </ListView>
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/float_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:fab_addButtonColorNormal="@color/colorAccent"
+            app:fab_addButtonColorPressed="@color/colorAccent"
+            app:fab_addButtonPlusIconColor="#fff"
+            app:fab_labelStyle="@style/Custom_Fab">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/write"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_colorNormal="@color/colorAccent"
+                    app:fab_colorPressed="@color/colorAccent"
+                    app:fab_icon="@drawable/ic_write"
+                    app:fab_size="mini"
+                    app:fab_title="Tweet"
+
+                    />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_colorNormal="@color/colorAccent"
+                    app:fab_colorPressed="@color/colorAccent"
+                    app:fab_icon="@drawable/ic_exit"
+                    app:fab_size="mini"
+                    app:fab_title="Exit"
+
+                    />
+
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>

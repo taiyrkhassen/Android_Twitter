@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:text="Write Tweet"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/tweet_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Tweet"
+        android:shadowColor="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        />
+    <Button
+        android:id="@+id/post_tweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:background="#00000000"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="end"/>
+
+
+</LinearLayout>
